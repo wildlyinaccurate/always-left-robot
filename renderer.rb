@@ -3,8 +3,8 @@ def render(maze, robot)
 
   maze.each_index do |y|
     maze[y].each_index do |x|
-      print maze[y][x] unless robot.coords == [x, y]
-      print robot.render if robot.coords == [x, y]
+      robot_is_here = robot.coords == [x, y]
+      print robot_is_here ? robot.render : maze[y][x]
     end
 
     print "\n"

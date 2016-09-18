@@ -10,7 +10,7 @@ end
 
 level = File.read(ARGV[0])
 maze = Maze.parse(level)
-fin = maze.finish_coords
+finish = maze.finish_coords
 robot = Robot.new(maze.start_coords, Robot::RIGHT)
 
 def wait
@@ -21,7 +21,7 @@ def wait
   end
 end
 
-while robot.coords != fin do
+while robot.coords != finish do
   render(maze.grid, robot)
   wait
   next_step(maze, robot)

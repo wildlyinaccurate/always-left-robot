@@ -5,8 +5,11 @@ def next_step(maze, robot)
 
   facing_backwards = turns == 2
   passage_on_left = !maze.is_wall(robot.left_coords)
+  finish_on_right = maze.finish_coords == robot.right_coords
 
-  if wall_ahead or facing_backwards or (turns == 0 and passage_on_left)
+  if finish_on_right
+    robot.turn_right
+  elsif wall_ahead or facing_backwards or (turns == 0 and passage_on_left)
     robot.turn_left
   else
     robot.move_to(next_coords)

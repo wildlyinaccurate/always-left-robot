@@ -2,6 +2,8 @@
 
 > This clever little robot will get itself out of any maze by always turning left.
 
+![](always-left-robot.gif)
+
 ## Usage
 
 ### Interactive mode

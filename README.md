@@ -24,7 +24,7 @@ ruby game.rb levels/1.txt --auto
 
 ## Generating levels
 
-Use the [Maze Generator](http://www.delorie.com/game-room/mazes/genmaze.cgi) with the width & height of each cell set to 2. Make sure you mark the start (`S`) and finish (`F`) points!
+Use the [Maze Generator](http://www.delorie.com/game-room/mazes/genmaze.cgi) with the width & height of each cell set to 2. Make sure you mark the start (`S`) and finish (`F`) points! See the [levels folder](https://github.com/wildlyinaccurate/always-left-robot/tree/master/levels) for some examples.
 
 ## Coding challenges
 

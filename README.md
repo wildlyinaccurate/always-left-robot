@@ -31,8 +31,9 @@ Use the [Maze Generator](http://www.delorie.com/game-room/mazes/genmaze.cgi) wit
 Are you learning how to code? Here are some challenges for you:
 
 1. Keep count of how many moves (including turns!) the robot has made, and display it on the screen.
-2. Halfway through level 1, the robot walks right past the finish! Make the robot turn right to finish sooner.
-3. Modify the robot so that it only turns right.
+2. Even in automatic mode, it can take a long time for the robot to finish a maze. Make automatic mode run faster.
+3. Halfway through level 1, the robot walks right past the finish! Make the robot turn right to finish sooner.
+4. Modify the robot so that it only turns right.
 
 ## Tests
 

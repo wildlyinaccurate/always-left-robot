@@ -28,12 +28,16 @@ class Maze
     marker_coords('F')
   end
 
-  # A wall is any marker that is not a space
-  def is_wall(coord)
-    x = coord[0]
-    y = coord[1]
+  def is_space(coords)
+    x = coords[0]
+    y = coords[1]
     marker = @grid[y][x]
 
-    %w{- + |}.include?(marker)
+    [' ', 'S', 'F'].include?(marker)
+  end
+
+  # A wall is any marker that is not a space
+  def is_wall(coords)
+    !is_space(coords)
   end
 end

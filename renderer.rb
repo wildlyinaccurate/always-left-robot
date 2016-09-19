@@ -10,7 +10,7 @@ def render(maze, robot)
     print "\n"
   end
 
-  print "Robot co-ordinates: [#{robot.coords.join(', ')}] | turns since last move: #{robot.turns_since_last_move}"
+  puts "Robot co-ordinates: [#{robot.coords.join(', ')}] | turns since last move: #{robot.turns_since_last_move}"
 end
 
 def clear_screen(maze)

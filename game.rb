@@ -21,6 +21,10 @@ def wait
   end
 end
 
+# This is the main game loop. You will find a loop similar to this in almost
+# every game. All it does is render the current state of the game, and then run
+# the next_step method which progresses the game's state one "step". It also
+# uses the wait method above to control the speed of the game.
 while robot.coords != finish do
   render(maze.grid, robot)
   wait

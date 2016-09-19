@@ -1,3 +1,9 @@
+# To render (draw) the maze onto the screen, we loop through each row, and then
+# print each column of that row. If the robot happens to be occupying a square,
+# we print the robot there instead.
+#
+# At the end of each row, we print the special "\n" character which moves the
+# cursor to the next line.
 def render(maze, robot)
   clear_screen(maze)
 

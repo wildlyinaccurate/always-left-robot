@@ -1,13 +1,32 @@
 class Maze
+  # The maze is essentially a grid of squares, where each square either has a
+  # piece of wall or an empty space. We represent this grid in Ruby as an array
+  # of rows, each of which contains an array of columns.
+  #
+  # For example, this maze:
+  #
+  # +-+-+
+  # S | F
+  # |   |
+  # +-+-+
+  #
+  # Will be represented like this:
+  #
+  # [
+  #   ['+', '-', '+'],
+  #   ['S', '|', 'F'],
+  #   ['|', ' ', '|'],
+  #   ['+', '-', '+']
+  # ]
+  #
+  def self.parse(maze_str)
+    Maze.new(maze_str.split("\n").map { |row| row.chars })
+  end
+
   attr_accessor :grid
 
   def initialize(grid)
     @grid = grid
-  end
-
-  # Build an array of maze rows, each containing an array of columns
-  def self.parse(maze_str)
-    Maze.new(maze_str.split("\n").map { |row| row.chars })
   end
 
   # Find any marker in the maze

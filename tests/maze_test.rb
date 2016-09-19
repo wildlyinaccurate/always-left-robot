@@ -5,8 +5,6 @@ def test_maze
 +-+-+-+
 S |   |
 + + + +
-| | | |
-+ + + +
 |   | F
 +-+-+-+
 eof
@@ -18,6 +16,6 @@ class MazeTest < Minitest::Test
   end
 
   def test_finish_coords
-    assert_equal [6, 5], test_maze.finish_coords
+    assert_equal [6, 3], test_maze.finish_coords
   end
 end

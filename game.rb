@@ -10,8 +10,8 @@ end
 
 level = File.read(ARGV[0])
 maze = Maze.parse(level)
-finish = maze.finish_coords
 robot = Robot.new(maze.start_coords, Robot::RIGHT)
+finish = maze.finish_coords
 
 def wait
   if ARGV[1] == '--auto'

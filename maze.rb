@@ -13,7 +13,7 @@ class Maze
   # Find any marker in the maze
   def marker_coords(marker)
     row = @grid.find_index { |x| x.include?(marker) }
-    col = @grid[row].find_index { |x| x == marker }
+    col = @grid[row].index(marker)
 
     [col, row]
   end
